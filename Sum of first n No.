@@ -11,6 +11,6 @@ public class java{
             sum+=i;
             i++; 
        } 
-       System.out.println(sum);
+       System.out.println("Sum of first Natural number:" + sum);
     }
 }
