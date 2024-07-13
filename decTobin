@@ -1,0 +1,26 @@
+import java.util.*;
+public class java{
+
+   public static void dectobin(int n){
+    int mynum = n;
+    int bin =0;
+    int pow =0;
+    while (n>0) {
+        int ld = n%2;
+        bin = bin+ ( ld* (int)Math.pow(10, pow) );
+        pow++;
+        n/=2;
+    }
+     System.out.println("Decimal Number :" + bin);
+   }
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       while (true) {
+            System.out.print("Enter Number");
+            int dec = sc.nextInt();
+            dectobin(dec);
+        }
+    
+    }
+}
