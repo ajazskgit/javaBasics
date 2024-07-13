@@ -1,0 +1,26 @@
+import java.util.*;
+public class java{
+
+   public static void bintodec(int n){
+    int mynum = n;
+    int dec =0;
+    int pow =0;
+    while (n>0) {
+        int ld = n%10;
+        dec = dec+ ( ld* (int)Math.pow(2, pow) );
+        n/=10;
+        pow++;
+    }
+     System.out.println("Decimal Number :" + dec);
+   }
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       do{
+       System.out.print("Enter Binary Number:");
+       int bin = sc.nextInt();
+       bintodec(bin);
+       }while(true);
+    
+    }
+}
